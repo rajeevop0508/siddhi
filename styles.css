@@ -1,0 +1,225 @@
+body {
+    font-family: 'Georgia', serif;
+    /* background: url('background.png') no-repeat center center fixed; */
+    background-image: linear-gradient(to left, #eecda3, #ef629f);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #333;
+}
+
+header {
+    background-color: rgba(255, 192, 203, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Segoe Print;
+    font-size: 3rem;
+    animation: fadeInDown 2s ease-out;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+section.intro {
+    animation-delay: 0.5s;
+}
+
+section.message {
+    animation-delay: 1s;
+}
+
+section.closing {
+    animation-delay: 1.5s;
+}
+
+section.question {
+    animation-delay: 2s;
+    text-align: center;
+}
+
+.intro h2, .message h3, .closing h3, .question h3 {
+    font-family: Segoe Print;
+    color: #e91e63;
+}
+
+.intro p, .message p, .closing p, .question p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(255, 192, 203, 0.8);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeInUp 2s ease-out;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Georgia', serif;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.popup {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+body {
+    font-family: Segoe Print;
+    text-align: center;
+    margin: 0;
+    background-color: #f9f4f5; /* Soft pastel color for the background */
+}
+
+.container {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #e91e63; /* Romantic color for the heading */
+}
+
+.buttons {
+    margin: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4081; /* Romantic color for the buttons */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5c8d; /* Lighter shade on hover for a soft effect */
+}
+
+.popup {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #e91e63; /* Romantic color for the border */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-family: Segoe Print;
+    font-size: 24px;
+    color: #e91e63; /* Romantic color for the popup text */
+}
+
+/* Add a smooth fade-in animation for the popup */
+.popup.fade-in {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+p.lastmsg{
+    font-family: Segoe Print;
+    font-size: larger;
+    /* transform: translateY(50px); */
+    animation: fadeIn 0.3s ease;
+    animation-delay: 1.5s;
+}
